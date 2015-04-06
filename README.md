@@ -1,6 +1,12 @@
 # clojure-datascience
 
-FIXME
+The source code for <clojure-datascience.herokuapp.com> -- a collection of resources for the budding intersection of data scientists and Clojurists.
+
+## Contributing
+
+For now resource submissions and website modifications should be done via pull requests.
+The data for the application is in `resources/data/resources.edn`.
+Any reasonable contributions will be merged.
 
 ## Prerequisites
 
@@ -16,4 +22,5 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Christopher Small
+
