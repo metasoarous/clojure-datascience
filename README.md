@@ -1,6 +1,6 @@
 # clojure-datascience
 
-The source code for <clojure-datascience.herokuapp.com> -- a collection of resources for the budding intersection of data scientists and Clojurists.
+The source code for [clojure-datascience.herokuapp.com](http://clojure-datascience.herokuapp.com) -- a collection of resources for the budding intersection of data scientists and Clojurists.
 
 ## Contributing
 
