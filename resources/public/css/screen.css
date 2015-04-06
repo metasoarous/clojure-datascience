@@ -4,3 +4,9 @@ body {
     height: 100%;
     padding-top: 40px;
 }
+
+div.category {
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
