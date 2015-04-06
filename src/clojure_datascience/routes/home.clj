@@ -15,7 +15,9 @@
                     rcs/resources-view)}))
 
 (defn about-page []
-  (layout/render "about.html"))
+  (layout/render
+    "about.html"
+    {:about (-> "md/about.md" io/resource slurp)}))
 
 (defroutes home-routes
   (GET "/" [] (home-page))

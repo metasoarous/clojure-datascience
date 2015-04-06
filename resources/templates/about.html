@@ -1,4 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <p>this is the story of clojuredatascience... work in progress</p>
+<div id="about">
+  {{about|markdown}}
+</div>
 {% endblock %}
