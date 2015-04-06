@@ -10,3 +10,10 @@ div.category {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+small.attribution-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
