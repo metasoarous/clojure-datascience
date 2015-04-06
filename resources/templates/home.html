@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
   <div class="jumbotron">
-    <h1>Welcome to clojuredatascience</h1>
-    <p>Time to start building your site!</p>
-    <p><a class="btn btn-primary btn-lg" href="http://luminusweb.net">Learn more &raquo;</a></p>
+    <h1>Welcome to clojure-datascience</h1>
+    <p>Your `goto` for data science resources for Clojurists!</p>
+    <p><a class="btn btn-primary btn-lg" href="http://github.com/metasoarous/clojure-datascience">
+      Contribute Resources! &raquo;
+    </a></p>
   </div>
 
   <div class="row">
     <div class="span12">
-    {{docs|markdown}}
+    {{resources|hiccup}}
     </div>
   </div>
 {% endblock %}

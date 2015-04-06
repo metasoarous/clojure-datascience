@@ -1,0 +1,73 @@
+[;; Books
+ {:name "Mastering Clojure Data Analysis"
+  :category "Books"
+  :author "Eric Rochester"
+  :url "https://www.packtpub.com/big-data-and-business-intelligence/mastering-clojure-data-analysis"
+  :alt-resources [{:title "Announcement" :url "http://www.ericrochester.com/pages/announcements/clj-data-analysis/index.html"}]}
+ {:name "Clojure Machine Learning"
+  :category "Books"
+  :tags ["ml"]
+  :author "Akhil Wali"
+  :url "https://www.packtpub.com/big-data-and-business-intelligence/clojure-machine-learning"}
+
+ ;; Videos
+ {:name "Clojure Data Science"
+  :category "Video"
+  :author "Edmund Jackson"
+  :url "https://www.youtube.com/watch?v=RVmY2lQ4DHE"}
+ {:name "Enter the Matrix"
+  :category "Video"
+  :tags ["matrices"]
+  :author "Mike Anderson"
+  :url "https://www.youtube.com/watch?v=_h9TLJtjSJo"}
+ {:name "Machine Learning Live"
+  :tags ["ml"]
+  :category "Video"
+  :author "Mike Anderson"
+  :url "https://www.youtube.com/watch?v=QJ1qgCr09j8"}
+ {:name "Loom and Graphs in Clojure"
+  :tags ["graph"]
+  :url "https://www.youtube.com/watch?v=wEEutxTYQQU"
+  :author "Aysylu Greenberg"}
+ {:name "Cascalog"
+  :tags ["big-data"]
+  :url "https://www.youtube.com/results?search_query=cascalog"}
+ ;# Youtube videos
+ ;- Jony Epsilon: http://gorilla-repl.org/
+
+ ;; Libraries
+ {:name "clj-vw"
+  :category "Library"
+  :url "https://github.com/engagor/clj-vw"}
+ {:name "deeplearning4j.org"
+  :category "Library"
+  :tags ["ml"]
+  :lein-name [org.deeplearning4j/dl4j-spark "0.0.3.3.2.alpha1"]}
+ {:name "core.matrix"
+  :category "Library"
+  :tags ["matrices"]
+  :description "Abstract matrix/array computation API, with both native, Clojure and Java implementations"
+  :author "Mike Anderson"
+  :url "https://github.com/mikera/core.matrix"}
+ {:name "Raynes/Conch"
+  :category "Library"
+  :description "Shell out to the executable of your choice"
+  :url "https://github.com/Raynes/conch"}
+ {:name "Loom"
+  :category "Library"
+  :tags ["graph"]
+  :description "Graph processing library"
+  :url "https://github.com/aysylu/loom"}
+ {:name "Mallet LDA"
+  :category "Library"
+  :url "https://github.com/marcliberatore/mallet-lda"}
+
+ ;; Featured Research Projects
+ {:name "Paper showing Asian hamsters, not European rats, were the reservoire for the Plague"
+  :category "Showcase"
+  :url "http://www.pnas.org/content/early/2015/02/20/1412887112"
+  :alt-resources [{:title "Source Code" :url "https://zenodo.org/record/14973#.VOxH5vnF9vo"}]
+  :author "Boris Schmid"
+  :tags ["bio" "visualization"]
+  }
+]

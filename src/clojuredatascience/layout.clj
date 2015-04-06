@@ -1,6 +1,7 @@
 (ns clojuredatascience.layout
   (:require [selmer.parser :as parser]
             [selmer.filters :as filters]
+            [hiccup.core :as hc]
             [markdown.core :refer [md-to-html-string]]
             [ring.util.response :refer [content-type response]]
             [compojure.response :refer [Renderable]]
@@ -12,6 +13,7 @@
 
 (parser/add-tag! :csrf-field (fn [_ _] (anti-forgery-field)))
 (filters/add-filter! :markdown (fn [content] [:safe (md-to-html-string content)]))
+(filters/add-filter! :hiccup (fn [content] [:safe (hc/html content)]))
 
 (deftype RenderableTemplate [template params]
   Renderable
