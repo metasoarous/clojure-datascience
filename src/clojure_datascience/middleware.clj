@@ -1,5 +1,5 @@
-(ns clojuredatascience.middleware
-  (:require [clojuredatascience.session :as session]
+(ns clojure-datascience.middleware
+  (:require [clojure-datascience.session :as session]
             [taoensso.timbre :as timbre]
             [environ.core :refer [env]]
             [selmer.middleware :refer [wrap-error-page]]

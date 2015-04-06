@@ -1,7 +1,7 @@
-(ns clojuredatascience.test.handler
+(ns clojure-datascience.test.handler
   (:use clojure.test
         ring.mock.request
-        clojuredatascience.handler))
+        clojure-datascience.handler))
 
 (deftest test-app
   (testing "main route"

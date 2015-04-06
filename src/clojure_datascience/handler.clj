@@ -1,9 +1,9 @@
-(ns clojuredatascience.handler
+(ns clojure-datascience.handler
   (:require [compojure.core :refer [defroutes routes]]
-            [clojuredatascience.routes.home :refer [home-routes]]
-            [clojuredatascience.middleware
+            [clojure-datascience.routes.home :refer [home-routes]]
+            [clojure-datascience.middleware
              :refer [development-middleware production-middleware]]
-            [clojuredatascience.session :as session]
+            [clojure-datascience.session :as session]
             [compojure.route :as route]
             [taoensso.timbre :as timbre]
             [taoensso.timbre.appenders.rotor :as rotor]
@@ -31,19 +31,19 @@
 
   (timbre/set-config!
     [:shared-appender-config :rotor]
-    {:path "clojuredatascience.log" :max-size (* 512 1024) :backlog 10})
+    {:path "clojure-datascience.log" :max-size (* 512 1024) :backlog 10})
 
   (if (env :dev) (parser/cache-off!))
   ;;start the expired session cleanup job
   (cronj/start! session/cleanup-job)
-  (timbre/info "\n-=[ clojuredatascience started successfully"
+  (timbre/info "\n-=[ clojure-datascience started successfully"
                (when (env :dev) "using the development profile") "]=-"))
 
 (defn destroy
   "destroy will be called when your application
    shuts down, put any clean up code here"
   []
-  (timbre/info "clojuredatascience is shutting down...")
+  (timbre/info "clojure-datascience is shutting down...")
   (cronj/shutdown! session/cleanup-job)
   (timbre/info "shutdown complete!"))
 

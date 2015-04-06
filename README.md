@@ -1,4 +1,4 @@
-# clojuredatascience
+# clojure-datascience
 
 FIXME
 

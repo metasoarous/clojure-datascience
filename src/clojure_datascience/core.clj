@@ -1,5 +1,5 @@
-(ns clojuredatascience.core
-  (:require [clojuredatascience.handler :refer [app]]
+(ns clojure-datascience.core
+  (:require [clojure-datascience.handler :refer [app]]
             [ring.adapter.jetty :refer [run-jetty]])
   (:gen-class))
 

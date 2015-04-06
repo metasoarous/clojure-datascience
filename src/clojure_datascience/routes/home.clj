@@ -1,5 +1,5 @@
 (ns clojure-datascience.routes.home
-  (:require [clojuredatascience.layout :as layout]
+  (:require [clojure-datascience.layout :as layout]
             [compojure.core :refer [defroutes GET]]
             [hiccup.core :as hc]
             [clojure.java.io :as io]))

@@ -1,4 +1,4 @@
-(ns clojuredatascience.layout
+(ns clojure-datascience.layout
   (:require [selmer.parser :as parser]
             [selmer.filters :as filters]
             [hiccup.core :as hc]

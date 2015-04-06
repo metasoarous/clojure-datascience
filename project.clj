@@ -1,4 +1,4 @@
-(defproject clojuredatascience "0.1.0-SNAPSHOT"
+(defproject clojure-datascience "0.1.0-SNAPSHOT"
 
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -22,11 +22,11 @@
                  ]
 
   :min-lein-version "2.0.0"
-  :uberjar-name "clojuredatascience.jar"
-  :repl-options {:init-ns clojuredatascience.handler}
+  :uberjar-name "clojure-datascience.jar"
+  :repl-options {:init-ns clojure-datascience.handler}
   :jvm-opts ["-server"]
 
-  :main clojuredatascience.core
+  :main clojure-datascience.core
 
   :plugins [[lein-ring "0.9.1"]
             [lein-environ "1.0.0"]
@@ -36,10 +36,10 @@
 
   
 
-  :ring {:handler clojuredatascience.handler/app
-         :init    clojuredatascience.handler/init
-         :destroy clojuredatascience.handler/destroy
-         :uberwar-name "clojuredatascience.war"}
+  :ring {:handler clojure-datascience.handler/app
+         :init    clojure-datascience.handler/init
+         :destroy clojure-datascience.handler/destroy
+         :uberwar-name "clojure-datascience.war"}
   
   
   
@@ -56,7 +56,7 @@
          
          
          
-         :repl-options {:init-ns clojuredatascience.repl}
+         :repl-options {:init-ns clojure-datascience.repl}
          :injections [(require 'pjstadig.humane-test-output)
                       (pjstadig.humane-test-output/activate!)]
          :env {:dev true}}})

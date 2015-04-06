@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/clojuredatascience.jar clojure.main -m clojuredatascience.core
+web: java $JVM_OPTS -cp target/clojure-datascience.jar clojure.main -m clojure-datascience.core

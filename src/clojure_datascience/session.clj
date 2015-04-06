@@ -1,4 +1,4 @@
-(ns clojuredatascience.session
+(ns clojure-datascience.session
   (:require [cronj.core :refer [cronj]]))
 
 (defonce mem (atom {}))
