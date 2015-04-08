@@ -27,17 +27,35 @@
   :url "https://www.youtube.com/watch?v=QJ1qgCr09j8"}
  {:name "Loom and Graphs in Clojure"
   :tags ["graph"]
+  :category "Video"
   :url "https://www.youtube.com/watch?v=wEEutxTYQQU"
   :author "Aysylu Greenberg"}
  {:name "Cascalog"
+  :category "Video"
   :tags ["big-data"]
   :url "https://www.youtube.com/results?search_query=cascalog"}
  ;# Youtube videos
  ;- Jony Epsilon: http://gorilla-repl.org/
 
  ;; Libraries
+ {:name "Gorilla REPL"
+  :category "Library"
+  :tags ["visualization" "environment"]
+  :url "http://gorilla-repl.org/"
+  :author "Jony Hudson"
+  :alt-resources [{:title "Source code" :url "https://github.com/JonyEpsilon/gorilla-repl"}]
+  :description "Wonderful browser based notebook programming environment for Clojure, akin to IPython or Mathematica Notebook."}
+ {:name "Semantic CSV"
+  :category "Library"
+  :tags ["processing"]
+  :url "http://github.com/metasoarous/semantic-csv"
+  :author "Christopher Small"
+  :description "Higher level tools for processing CSV and other tabular data."
+  :alt-resources [{:title "Documentation" :url "http://metasoarous.github.io/semantic-csv"}]}
  {:name "clj-vw"
   :category "Library"
+  :description "A Clojure client and wrapper for Vowpal Wabbit"
+  :tags ["nlp" "ml"]
   :url "https://github.com/engagor/clj-vw"}
  {:name "deeplearning4j.org"
   :category "Library"
@@ -61,9 +79,19 @@
  {:name "Mallet LDA"
   :category "Library"
   :url "https://github.com/marcliberatore/mallet-lda"}
+ {:name "clj-ml"
+  :category "Library"
+  :author "2010: Antonio Garrote; 2010-2013: Ben Mabey; 2013: Joshua Eckroth"
+  :url "https://github.com/joshuaeckroth/clj-ml"
+  :tags ["ml"]
+  :description "Clojure wrapper around Weka and other ML libraries"}
 
  ;; Featured Research Projects
- {:name "Paper showing Asian hamsters, not European rats, were the reservoire for the Plague"
+ {:name "Climate-driven introduction of the Black Death and successive plague reintroductions into Europe"
+  :description "This paper shows the Black Plague likely resulted from continued reintroduction of plague into Europe from Asian rodent reservoirs.
+               Previously, it was assumed that once introduced from Asia, European reservoirs were established, from which subsequence epidemics spawned.
+               However, climate data analyses support the alternative hypothesis.
+               The analyses in this paper used a number of Clojure analysis tools."
   :category "Showcase"
   :url "http://www.pnas.org/content/early/2015/02/20/1412887112"
   :alt-resources [{:title "Source Code" :url "https://zenodo.org/record/14973#.VOxH5vnF9vo"}]
