@@ -85,6 +85,13 @@
   :url "https://github.com/joshuaeckroth/clj-ml"
   :tags ["ml"]
   :description "Clojure wrapper around Weka and other ML libraries"}
+ {:name "Grafter"
+  :description "Tranform tabular data or produce Linked Graph Data"
+  :category "Library"
+  :author "Swirrl"
+  :url "http://grafter.org/"
+  :tags ["datamunging"]
+  :lein-name [grafter "0.4.0"]}
 
  ;; Featured Research Projects
  {:name "Climate-driven introduction of the Black Death and successive plague reintroductions into Europe"
