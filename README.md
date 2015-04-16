@@ -1,5 +1,7 @@
 # clojure-datascience
 
+[![Join the chat at https://gitter.im/metasoarous/clojure-datascience](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/metasoarous/clojure-datascience?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The source code for [clojure-datascience.herokuapp.com](http://clojure-datascience.herokuapp.com) -- a collection of resources for the budding intersection of data scientists and Clojurists.
 
 ## Contributing
