@@ -18,6 +18,7 @@
                  [ring-middleware-format "0.5.0"]
                  [noir-exception "0.2.3"]
                  [bouncer "0.3.2"]
+                 [com.stuartsierra/component "0.2.3"]
                  [prone "0.8.1"]
                  ]
 
