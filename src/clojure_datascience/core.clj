@@ -1,6 +1,7 @@
 (ns clojure-datascience.core
   (:require [clojure-datascience.handler :refer [app]]
             [clojure-datascience.config :refer [new-conifg]]
+            [clojure-datascience.resources :refer [new-db]]
             [com.stuartsierra.component :as component]
             [taoensso.timbre :as timbre :refer [log info]]
             [ring.adapter.jetty :refer [run-jetty]])
@@ -27,7 +28,8 @@
   [overrides]
   (component/system-map
     :config   (new-config overrides)
-    :jetty-server (component/using (new-jetty-server) [:config])))
+    :database (component/using (new-db) [:config])
+    :jetty-server (component/using (new-jetty-server) [:config :database])))
 
 (defn -main [& [port]]
   (let [opts (if port

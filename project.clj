@@ -19,6 +19,7 @@
                  [noir-exception "0.2.3"]
                  [bouncer "0.3.2"]
                  [com.stuartsierra/component "0.2.3"]
+                 [com.novemberain/monger "2.0.0"]
                  [prone "0.8.1"]
                  ]
 
