@@ -17,6 +17,7 @@
                  [ring/ring-session-timeout "0.1.0"]
                  [ring-middleware-format "0.5.0"]
                  [noir-exception "0.2.3"]
+                 [lib-noir "0.8.9"]
                  [bouncer "0.3.2"]
                  [com.stuartsierra/component "0.2.3"]
                  [com.novemberain/monger "2.0.0"]
