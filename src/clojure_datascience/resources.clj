@@ -10,7 +10,7 @@
   (start [component]
     (info "Opening mongo connection")
     (let [conn (if (:mongo-uri config)
-                 (mg/connect-via-uri (:mongo-uri env))
+                 (mg/connect-via-uri (:mongo-uri config))
                  (mg/connect))
           mongo-db (mg/get-db conn "clojure-datascience")]
       (assoc component

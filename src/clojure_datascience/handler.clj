@@ -4,6 +4,7 @@
             [clojure-datascience.middleware
              :refer [development-middleware production-middleware]]
             [clojure-datascience.session :as session]
+            [com.stuartsierra.component :as component]
             [compojure.route :as route]
             [taoensso.timbre :as timbre]
             [taoensso.timbre.appenders.rotor :as rotor]
@@ -47,9 +48,20 @@
   (cronj/shutdown! session/cleanup-job)
   (timbre/info "shutdown complete!"))
 
-(def app
+
+;; Compoent compatibility stuff (al. a Stuart Sierra's approach of injecting rout handler dependencies into
+;; the request hash...); here we're modifying a bit to make it clear that it's the database that we're
+;; associng in. Also note that we're using a more custom key name for this than ::web-app
+
+(defn wrap-app-component [f database]
+  (fn [req]
+    (f (assoc req :clojure-datascience.component/database database))))
+
+(defn make-handler [database]
   (-> (routes
         home-routes
         base-routes)
+      (wrap-app-component database)
       development-middleware
       production-middleware))
+

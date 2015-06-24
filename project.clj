@@ -21,6 +21,7 @@
                  [bouncer "0.3.2"]
                  [com.stuartsierra/component "0.2.3"]
                  [com.novemberain/monger "2.0.0"]
+                 [com.draines/postal "1.11.3"]
                  [prone "0.8.1"]
                  ]
 
@@ -59,7 +60,7 @@
          
          
          
-         :repl-options {:init-ns clojure-datascience.repl}
+         :repl-options {:init-ns clojure-datascience.core}
          :injections [(require 'pjstadig.humane-test-output)
                       (pjstadig.humane-test-output/activate!)]
          :env {:dev true}}})

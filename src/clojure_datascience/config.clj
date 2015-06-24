@@ -8,7 +8,7 @@
 
 
 (def config-parsers
-  [[:server-port #(Integer/parseInt)]
+  [[:server-port #(Integer/parseInt %)]
    [:mongo-uri   identity]])
 
 
@@ -16,24 +16,21 @@
   component/Lifecycle
   (start [component]
     (info "Reading env variables for configuration")
-    (let [config
-          (reduce
-            (fn [c [k parser]]
-              (if-let [v (env k)]
-                (assoc k (parser v))))
-            config-defaults
-            config-parsers)]
-      (assoc component
-             :config
-             (merge config overrides))))
+    (reduce
+      (fn [c [k parser]]
+        (assoc c k (if-let [v (env k)]
+                     (parser v)
+                     (get (merge config-defaults overrides) k))))
+      component
+      config-parsers))
 
   (stop [component]
-    (info "Closing config")
-    (assoc component :config nil)))
+    (info "Closing config (no-op)")
+    component))
 
 
 (defn new-config
-  [[overrides]]
+  [overrides]
   (Config. overrides))
 
 
